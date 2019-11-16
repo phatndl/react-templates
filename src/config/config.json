@@ -1,7 +1,0 @@
-{
-  "api": {
-    "prod": "https://api.fptplay.net/api/v6.1_slg_ng/user/otp/login?version=fptplay_2.20&device=smarttv(version:,model:)&nettype=wifi&e=1568484856&st=LFm2CWzmEU_ySdkiIZs_EA",
-    "dev": "https://api-staging.fptplay.net/api/v6.1_slg_ng/user/otp/login?version=fptplay_2.20&device=smarttv(version:,model:)&nettype=wifi&e=1568484856&st=LFm2CWzmEU_ySdkiIZs_EA",
-    "timeout": 5000
-  }
-}

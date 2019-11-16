@@ -3,6 +3,7 @@
     "baseUrl": "./src",
     "target": "es6",
     "checkJs": false,
+
     "paths": {
       "assets": ["./assets/*"],
       "redux": ["./redux/*"],
@@ -10,9 +11,14 @@
       "pages": ["./pages/*"],
       "utils": ["./utils/*"],
       "config": ["./config/*"],
-      "constants": ["./constants/*"]
+      "constants": ["./constants/*"],
+      "actions": ["./actions/*"],
+      "reducers": ["./reducers/*"],
+      "services": ["./services/*"],
+      "translations": ["./translations.*"]
     }
   },
+
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
