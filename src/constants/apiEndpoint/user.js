@@ -5,6 +5,6 @@ export default {
   RANDOM_USER: {
     method: METHOD.GET,
     url: '/api',
-    handler: apiDev
-  }
-}
+    handler: apiDev,
+  },
+};

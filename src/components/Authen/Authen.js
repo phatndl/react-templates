@@ -10,7 +10,7 @@ const Auth = () => {
   // const token = TokenControl.Token();
   const token = '';
   const user = useSelector(state => state.user);
-  console.log("user: ", user);
+  console.log('user: ', user);
   return <div>{token ? <Login token={token} /> : <Login token='' />}</div>;
 };
 

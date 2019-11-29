@@ -1,14 +1,14 @@
 export const ACTION_TYPES = {
-  TOGGLE: 'TOGGLE'
-}
+  TOGGLE: 'TOGGLE',
+};
 
-const toggleLoader = (val) => (dispatch) => {
+const toggleLoader = val => dispatch => {
   dispatch({
     type: ACTION_TYPES.TOGGLE,
-    val
-  })
-}
+    val,
+  });
+};
 
 export default {
-  toggleLoader
+  toggleLoader,
 };

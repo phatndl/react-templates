@@ -1,8 +1,8 @@
-import React from "react";
-import { Router } from "react-router";
-import { createBrowserHistory as createHistory } from "history";
-import PropTypes from "prop-types";
-import warning from "tiny-warning";
+import React from 'react';
+import { Router } from 'react-router';
+import { createBrowserHistory as createHistory } from 'history';
+import PropTypes from 'prop-types';
+import warning from 'tiny-warning';
 
 /**
  * The public API for a <Router> that uses HTML5 history.

@@ -4,20 +4,19 @@ import { Transition } from 'react-transition-group';
 import './Loader.scss';
 
 const Loader = () => {
-
   const duration = 300;
 
   const defaultStyle = {
     transition: `opacity ${duration}ms ease-in-out`,
     opacity: 0,
-    display: 'none'
-  }
+    display: 'none',
+  };
 
   const transitionStyles = {
     entering: { opacity: 0, display: 'block' },
-    entered:  { opacity: 1, display: 'block' },
-    exiting:  { opacity: 0, display: 'block' },
-    exited:  { opacity: 0, display: 'none' },
+    entered: { opacity: 1, display: 'block' },
+    exiting: { opacity: 0, display: 'block' },
+    exited: { opacity: 0, display: 'none' },
   };
 
   const { isLoading } = useSelector(state => state.loader);
@@ -28,13 +27,14 @@ const Loader = () => {
           id='loader'
           style={{
             ...defaultStyle,
-            ...transitionStyles[state]
-          }}>
-            <div className='spinner'></div>
+            ...transitionStyles[state],
+          }}
+        >
+          <div className='spinner'></div>
         </div>
-        )}
+      )}
     </Transition>
-  )
-}
+  );
+};
 
 export default Loader;

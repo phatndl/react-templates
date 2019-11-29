@@ -2,9 +2,9 @@ import user from './user';
 
 export default {
   en: {
-    ...user.en
+    ...user.en,
   },
   vi: {
-    ...user.vi
-  }
-}
+    ...user.vi,
+  },
+};

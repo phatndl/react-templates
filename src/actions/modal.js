@@ -1,15 +1,15 @@
 export const ACTION_TYPES = {
   SET_ACTIVE_MODAL: 'SET_ACTIVE_MODAL',
-}
+};
 
 const toggleModal = (name, val) => {
   return {
     type: ACTION_TYPES.SET_ACTIVE_MODAL,
     name,
-    val
-  }
-}
+    val,
+  };
+};
 
 export default {
-  toggleModal
-}
+  toggleModal,
+};

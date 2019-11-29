@@ -5,17 +5,18 @@ import { Route, Redirect } from 'react-router-dom';
 const PrivateRoute = ({ component: Component, location, ...rest }) => {
   // const token = TokenControl.Token();
   const token = '';
-  if (token){
-    return <Route component={Component} {...rest} />
+  if (token) {
+    return <Route component={Component} {...rest} />;
   }
 
-  return(
-    <Redirect to={{
-      pathname: '/',
-      state: location
-    }} />
-  )
-
+  return (
+    <Redirect
+      to={{
+        pathname: '/',
+        state: location,
+      }}
+    />
+  );
 };
 
 export default PrivateRoute;
